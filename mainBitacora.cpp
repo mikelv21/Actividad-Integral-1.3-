@@ -53,7 +53,7 @@ int main(int argc, char* argv[]) {
 
   //Busqueda para el usuario de registros delimitados por fechas
   menu();
-  cout << "Dia inicial: ";
+  cout << "\nDia inicial: ";
   cin >> diaI;
   cout << "Mes inicial: ";
   cin >> mesI;
@@ -74,14 +74,18 @@ int main(int argc, char* argv[]) {
       }
   }
   else {
-    cout<<"ERROR: Alguna fecha introducida no tiene un registro correspondiente";
-  cout<<"\n Intente de nuevo \n";
+    cout<<"\nERROR: Alguna fecha introducida no tiene un registro correspondiente";
+    cout<<"\n       Intente de nuevo \n";
   }
 
   return 0;
 }
 
 void menu(){
-  cout<<"\n    ====================   Bienvenido a la bitacora  =====================\n";
-  cout<<"Para buscar los registros entre un rango de fechas ingresa los siguientes datos: \n"<<endl;
+  cout<<"\n    ================   Bienvenido a la bitacora   ===============\n\n";
+  cout<<" Para buscar los registros entre un rango de fechas desde el 1 de Junio \n";
+  cout<<"             al 30 de Octubre, ingresa los siguientes datos: \n\n";
+  cout<<"  NOTA: Para el día ingrese un número entero del 1 a 31 y para el mes \n";
+  cout<<"  el número entero correspondiente a este. Por ejemplo, para el 10 de \n";
+  cout<<"           Sepriembre, la entrada debe ser dia '10' y mes '9'\n";
 }
